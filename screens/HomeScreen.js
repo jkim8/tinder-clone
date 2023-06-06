@@ -1,11 +1,15 @@
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
+import tw from "twrnc";
+import Header from "../components/home/Header";
+import Body from "../components/home/Body";
 
 const HomeScreen = () => {
   return (
-    <View>
-      <Text>HomeScreen</Text>
-    </View>
+    <SafeAreaView style={tw`flex-1`}>
+      <Header />
+      <Body />
+    </SafeAreaView>
   );
 };
 
