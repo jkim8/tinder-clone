@@ -5,9 +5,11 @@ import Card from "./Card";
 import tw from "twrnc";
 import { mock } from "../../mock/tinder-mock";
 import { Entypo, AntDesign } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const Body = () => {
   const swiperRef = useRef();
+  const navigation = useNavigation();
 
   return (
     <>
@@ -24,10 +26,10 @@ const Body = () => {
           containerStyle={{ backgroundColor: "transparent" }}
           verticalSwipe={false}
           onSwipedLeft={() => {
-            console.log("매칭");
-          }}
-          onSwipedRight={() => {
             console.log("매칭 실패");
+          }}
+          onSwipedRight={(cardIndex) => {
+            navigation.navigate("Match", { swipedUser: mock.users[cardIndex] });
           }}
         ></Swiper>
       </View>

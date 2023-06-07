@@ -11,7 +11,7 @@ export const etc = {
   loginBg: "https://tinder.com/static/tinder.png",
   logo: "https://is4-ssl.mzstatic.com/image/thumb/Purple116/v4/03/cd/03/03cd03d6-1079-1c89-14d2-7cbcd56802a7/AppIcon-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/230x0w.webp",
   matchedLogo:
-    "https://cdn.discordapp.com/attachments/1073889482341875812/1075141288141279325/its-a-match.png",
+    "https://www.citypng.com/public/uploads/preview/-11595269836bupn3ajrly.png",
 };
 
 export const users = [
