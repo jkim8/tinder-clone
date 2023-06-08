@@ -25,7 +25,7 @@ const Header = () => {
           source={{ uri: mock.etc.logo }}
         />
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Chat")}>
         <Ionicons name="chatbubbles-sharp" size={30} color="#ff6864" />
       </TouchableOpacity>
     </View>
