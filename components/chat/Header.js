@@ -4,7 +4,7 @@ import { Ionicons, Foundation } from "@expo/vector-icons";
 import tw from "twrnc";
 import { useNavigation } from "@react-navigation/native";
 
-const Header = ({ callEnabled }) => {
+const Header = ({ callable, title }) => {
   const navigation = useNavigation();
 
   return (
@@ -13,9 +13,9 @@ const Header = ({ callEnabled }) => {
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <Ionicons name="chevron-back-outline" size={34} color={"#FF5864"} />
         </TouchableOpacity>
-        <Text style={tw`text-2xl font-bold pl-2`}>Messages</Text>
+        <Text style={tw`text-2xl font-bold pl-2`}>{title}</Text>
       </View>
-      {callEnabled && (
+      {callable && (
         <View>
           <TouchableOpacity style={tw`bg-red-200 rounded-full mr-4 p-2`}>
             <Foundation name="telephone" size={26} color={"#FF5864"} />

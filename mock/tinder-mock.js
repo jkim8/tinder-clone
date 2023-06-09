@@ -64,7 +64,7 @@ export const assets = {
 const messages = [
   { uid: "123", displayName: "Zendaya", text: "안녕하세요!", id: 1 },
   {
-    uid: "coder",
+    uid: "juno",
     displayName: "the coders studios",
     text: "안녕하세요 ㅎㅎ",
     id: 2,
@@ -72,7 +72,7 @@ const messages = [
 
   { uid: "123", displayName: "Zendaya", text: "반가워요 :)", id: 3 },
   {
-    uid: "coder",
+    uid: "juno",
     displayName: "the coders studios",
     text: "저도 반가워요",
     id: 4,
